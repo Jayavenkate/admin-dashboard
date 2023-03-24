@@ -31,12 +31,13 @@ export const data = {
 export function DoughnutChart() {
   return (
     <Paper className="bar-chart" elevation={3}>
-      <Card className="heading"elevation={3}>
-        <h3 className="heading-1">Revenue Sources</h3>
-      </Card>
-      <CardContent style={{ width: 500, height: 300 }}>
+      <div className="heading">
+        <h1 className="heading-1" style={{"color":"rimary"}}>Revenue Sources</h1>
+    
+      <CardContent >
         <Doughnut data={data} />
       </CardContent>
+      </div>
     </Paper>
 
   );

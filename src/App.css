@@ -1,19 +1,29 @@
-
+body{
+  margin-left:40px;
+}
 .heading-1{
   padding-left: 40px;
 }
 .con{
-  max-width: max-content;
+  /* max-width: max-content; */
   padding-top: 20px;
   margin-top: 50px;
   /* padding-left: 40px; */
+}
+.line-pie{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .data-earn{
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+
+}
+.development{
+  width: 700px;
 
 }
 .bar-chart{
@@ -21,11 +31,12 @@
  }
  
  .bar-chart{
-  width: 400px;
-  height: 400px;
+ width: max-content;
+
+  /* height: 600px; */
  }
  .progress-bar{
-  width: 800px;
+  width: 820px;
   padding-top: 30px;
  margin-top: 40px;
  }
@@ -37,6 +48,41 @@
   width: 400px;
  margin-top: 40px;
 
-  /* border: 1px solid black; */
+
 }
- 
+.line-dough{
+  display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+}
+.app{
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 50px;
+
+} 
+.color-list{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+
+}
+
+.list-1{
+  width: 400px;
+  padding-top: 20px;
+}
+.illustration{
+width: 700px; 
+margin-top: 40px;
+}
+.img{
+  width: 400px;
+}
+.linear-illustration{
+  display: grid;
+grid-template-columns: 1fr 1fr;
+
+
+}

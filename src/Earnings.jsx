@@ -30,9 +30,9 @@ export function Earnings() {
 function EarningsCard({ data }) {
 
   return (
-    <div>
-      <div className="earn-card">
-        <Paper sx={{ minWidth: 275 }} elevation={3}>
+   
+     
+        <Paper  className="earnings" sx={{width:"250px"}}linear-illustration elevation={3}>
           <CardContent>
             <Typography sx={{ fontSize: 12 }} color="primary" gutterBottom>
               {data.heading}
@@ -45,8 +45,8 @@ function EarningsCard({ data }) {
         </Paper>
 
 
-      </div>
-    </div>
+     
+   
   );
 }
 // export function Earnings() {

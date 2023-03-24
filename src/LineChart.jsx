@@ -1,4 +1,6 @@
 import Card from '@mui/material/Card';
+import Paper from '@mui/material/Paper';
+
 import CardContent from '@mui/material/CardContent';
 import {
   Chart as ChartJS,
@@ -10,6 +12,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+
 import { Line } from 'react-chartjs-2';
 ChartJS.register(
   CategoryScale,
@@ -69,15 +72,16 @@ const options = {
 export function LineChart() {
 
   return (
-    <Card className="con">
-      <Card className="heading">
-        <h3 className="heading-1">Earnings Overview</h3>
-      </Card>
+    <Paper className="con" elevation={3}>
+      <div className="heading">
+        <h1 className="heading-1">Earnings Overview</h1>
+    
       <CardContent style={{ width: 800, height: 400 }}>
         <Line options={options} data={data} />
 
       </CardContent>
-    </Card>
+      </div>
+    </Paper>
 
   );
 }
