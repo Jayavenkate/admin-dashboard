@@ -24,6 +24,7 @@ body{
 }
 .development{
   width: 700px;
+  height: min-content;
 
 }
 .bar-chart{
